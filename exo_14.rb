@@ -1,17 +1,15 @@
-# Charge les données depuis exo_13.rb en utilisant require_relative
-require_relative 'exo_13'
+# Dans exo_13.rb
+faux_emails = []
+50.times do |i|
+  numero = format("%02d", i + 1)
+  faux_email = "jean.dupont.#{numero}@email.fr"
+  faux_emails << faux_email
+end
+faux_emails_pairs = []
+faux_emails.each_with_index do |email, index|
+  faux_emails_pairs << email if (index + 1) % 2 == 0
+end
 
-# Utilise une boucle pour parcourir les faux e-mails
-faux_emails.each do |email|
-  # Divise l'e-mail en parties en utilisant le caractère "."
-  email_parts = email.split(".")
-
-  # Récupère la partie contenant le numéro (indice 2) et la convertit en entier
-  numero = email_parts[2].to_i
-
-  # Vérifie si le numéro est pair
-  if numero.even?
-    # Affiche l'e-mail avec un numéro pair
-    puts email
-  end
+faux_emails_pairs.each do |email|
+  puts email
 end
