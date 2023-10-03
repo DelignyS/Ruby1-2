@@ -1,4 +1,4 @@
-# Dans exo_13.rb
+# Dans exo_13
 faux_emails = []
 50.times do |i|
   numero = format("%02d", i + 1)

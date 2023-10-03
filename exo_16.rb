@@ -1,5 +1,5 @@
 
-puts "Salut, bienvenue dans ma reverse pyramide ! Combien d'étages veux-tu ?"
+print "Salut, bienvenue dans ma reverse pyramide ! Combien d'étages veux-tu ?"
 
 nombre_etages = gets.chomp.to_i
 

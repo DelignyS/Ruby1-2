@@ -1,4 +1,4 @@
-puts "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
+print "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
 # d'abord le nombre d'étage 
 nombre_etages = gets.chomp.to_i
 # Vérifie si 1 à 25
